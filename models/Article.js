@@ -8,7 +8,7 @@ class Article extends Model {
 
 Article.init(
   {
-    id: {
+    article_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
