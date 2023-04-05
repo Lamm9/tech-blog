@@ -1,3 +1,4 @@
+const sequelize = require('../config/connection');
 const User = require('./User');
 const Article = require('./Article');
 
