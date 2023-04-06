@@ -11,12 +11,12 @@
 <section>
   <header class="display-flex justify-space-between align-center p-2">
     <h1>Da Tech Blog</h1>
-    <nav>
-      <button class="btn" id="login" href="/api/users/login">log in</button>
+    <nav class="navbar">
+      <button class="btn" href="/views/login">log in</button>
     </nav>
     {{#if logged_in}}
     <nav>
-      <button class="btn" id="logout" href="/">logout</button>
+      <button class="btn" id="logout-home" href="/views/layouts/main.handlebars">logout</button>
     </nav>
     {{/if}}
   </header>

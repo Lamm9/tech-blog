@@ -56,4 +56,3 @@ document
   .querySelector("#login-submit")
   .addEventListener("submit", loginHandler);
 
-  

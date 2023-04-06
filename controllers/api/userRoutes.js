@@ -25,7 +25,7 @@ router.post("/signup", async (req, res) => {
 
       res.status(200).json(userData);
     });
-    
+
     res.redirect("/homepage");
   } catch (error) {
     console.log(error);
@@ -62,8 +62,6 @@ router.post("/login", async (req, res) => {
         .status(200)
         .json({ user: userData, message: "You are now logged in!" });
     });
-
-    res.redirect("/homepage");
   } catch (error) {
     console.log(error);
     res.status(500).json(error);
@@ -76,7 +74,6 @@ router.post("/logout", async (req, res) => {
     if (req.session.logged_in) {
       req.session.destroy(() => {
         res.status(204).end();
-        res.redirect("/");
       });
     } else {
       res.status(404).end();
