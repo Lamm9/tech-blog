@@ -18,6 +18,10 @@ Article.init(
       type: DataTypes.STRING,
       allowNull: false
     },
+    content: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     author: {
       type: DataTypes.STRING,
       allowNull: false

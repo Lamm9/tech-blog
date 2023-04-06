@@ -1,0 +1,32 @@
+[
+  {
+    "article_id": 1,
+    "title": "First article!",
+    "content": "This is my first post!",
+    "author": "Elijah"
+  },
+  {
+    "article_id": 2,
+    "title": "Second article!",
+    "content": "This is my second post!",
+    "author": "Moses"
+  },
+  {
+    "article_id": 3,
+    "title": "Third article!",
+    "content": "This is my third post!",
+    "author": "Paul"
+  },
+  {
+    "article_id": 4,
+    "title": "Fourth article!",
+    "content": "This is my fourth post!",
+    "author": "Jacob"
+  },
+  {
+    "article_id": 5,
+    "title": "Fifth article!",
+    "content": "This is my fifth post!",
+    "author": "James"
+  }
+]
