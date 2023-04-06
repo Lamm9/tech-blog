@@ -17,7 +17,7 @@ const seedDatabase = async () => {
       article_id: article.article_id,
       title: article.title,
       content: article.content,
-      author: article.author,
+      user_id: article.user_id,
     });
   }
 

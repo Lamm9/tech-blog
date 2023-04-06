@@ -14,7 +14,10 @@ router.get("/login", async (req, res) => {
 // user signup route
 router.post("/signup", async (req, res) => {
   try {
-    const userData = await User.create(req.body);
+    const userData = await User.create({
+      name: req.body.name,
+      password: req.body.password,
+    });
 
     req.session.save(() => {
       req.session.user_id = userData.id;
@@ -22,6 +25,8 @@ router.post("/signup", async (req, res) => {
 
       res.status(200).json(userData);
     });
+    
+    res.redirect("/homepage");
   } catch (error) {
     console.log(error);
     res.status(500).json(error);
@@ -33,7 +38,7 @@ router.post("/login", async (req, res) => {
   try {
     const userData = await User.findOne({
       where: {
-        name: req.body.username,
+        name: req.body.name,
       },
     });
 
@@ -57,6 +62,8 @@ router.post("/login", async (req, res) => {
         .status(200)
         .json({ user: userData, message: "You are now logged in!" });
     });
+
+    res.redirect("/homepage");
   } catch (error) {
     console.log(error);
     res.status(500).json(error);

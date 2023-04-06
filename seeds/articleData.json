@@ -3,30 +3,30 @@
     "article_id": 1,
     "title": "First article!",
     "content": "This is my first post!",
-    "author": "Elijah"
+    "user_id": 1
   },
   {
     "article_id": 2,
     "title": "Second article!",
     "content": "This is my second post!",
-    "author": "Moses"
+    "user_id": 2
   },
   {
     "article_id": 3,
     "title": "Third article!",
     "content": "This is my third post!",
-    "author": "Paul"
+    "user_id": 5
   },
   {
     "article_id": 4,
     "title": "Fourth article!",
     "content": "This is my fourth post!",
-    "author": "Jacob"
+    "user_id": 4
   },
   {
     "article_id": 5,
     "title": "Fifth article!",
     "content": "This is my fifth post!",
-    "author": "James"
+    "user_id": 3
   }
 ]

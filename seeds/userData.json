@@ -13,14 +13,20 @@
   },
   {
     "id": 3,
-    "name": "Noah",
+    "name": "James",
     "email": "email3@email.com",
     "password": "password10"
   },
   {
     "id": 4,
-    "name": "Timothy",
+    "name": "Jacob",
     "email": "email4@email.com",
+    "password": "password10"
+  },
+  {
+    "id": 5,
+    "name": "Paul",
+    "email": "email5@email.com",
     "password": "password10"
   }
 ]
