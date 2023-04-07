@@ -13,9 +13,9 @@ const loginHandler = async (event) => {
       headers: { "Content-Type": "application/json" },
     });
 
-    // send to homepage if successful
+    // if response ok, redirect to homepage
     if (response.ok) {
-      document.location.replace("/homepage");
+      document.location.replace("/");
     } else {
       alert(response.statusText);
     }
@@ -30,16 +30,16 @@ const signupHandler = async (event) => {
   const password = document.querySelector("#login-password").value.trim();
 
   // validate info
-  if (name && email) {
-    const response = await fetch("/api/users/signup", {
+  if (name && password) {
+    const response = await fetch("/api/users/", {
       method: "POST",
       body: JSON.stringify({ name, password }),
       headers: { "Content-Type": "application/json" },
     });
 
-    // send to homepage if successful
+    // if response ok, redirect to homepage
     if (response.ok) {
-      console.log(response.statusText);
+      document.location.replace("/");
     } else {
       alert(response.statusText);
     }

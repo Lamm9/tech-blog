@@ -1,4 +1,4 @@
-const logout = async () => {
+const logoutHandler = async () => {
   // POST req to logout
   const response = await fetch("/api/users/logout", {
     method: "POST",
